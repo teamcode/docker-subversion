@@ -74,5 +74,5 @@ htdigest -c users.conf "Subversion Repository" lala
 ```
 htdigest users.conf "Subversion Repository" ryan
 ```
-##License
+## License
 The Dockerized Apache Subversion is released under version 2.0 of the Apache License.
