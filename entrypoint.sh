@@ -2,7 +2,7 @@
 set -e
 
 ASSETS_DIR=/opt/subversion/assets
-HTTPD_CONF_DIR=/etc/httpd
+HTTPD_CONF_DIR=/etc/subversion/httpd
 DATA_DIR=/var/opt/subversion
 
 echo "Initializing subversion environment..."

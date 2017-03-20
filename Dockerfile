@@ -22,7 +22,7 @@ RUN yum -y install httpd httpd-devel && \
     yum clean all
 
 # Install mod_jk
-ADD tomcat-connectors-1.2.42-src.tar.gz .
+ADD assets/tomcat-connectors-1.2.42-src.tar.gz .
 RUN cd tomcat-connectors-1.2.42-src/native/ \
     && ./configure --with-apxs=/usr/bin/apxs \
     && make \

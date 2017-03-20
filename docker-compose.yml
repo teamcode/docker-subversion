@@ -6,9 +6,9 @@ services:
     container_name: subversion
     hostname: subversion
     volumes:
-      - /home/subversion/config/httpd:/etc/httpd
-      - /home/subversion/data:/var/opt/subversion
-      - /home/subversion/logs/httpd:/var/log/httpd
+      - /Users/chiang/tchome/config/httpd:/etc/subversion/httpd
+      - /Users/chiang/tchome/data:/var/opt/subversion
+      - /Users/chiang/tchome/logs/httpd:/var/log/httpd
     ports:
       - 9999:80
     environment:
