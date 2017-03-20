@@ -1,0 +1,16 @@
+version: '2'
+services:
+  subversion:
+    build: .
+    image: teamcode/subversion:0.0.1
+    container_name: subversion
+    hostname: subversion
+    volumes:
+      - /home/subversion/config/httpd:/etc/httpd
+      - /home/subversion/data:/var/opt/subversion
+      - /home/subversion/logs/httpd:/var/log/httpd
+    ports:
+      - 9999:80
+    environment:
+      TZ: "Asia/Seoul"
+    entrypoint: /opt/subversion/assets/entrypoint.sh
