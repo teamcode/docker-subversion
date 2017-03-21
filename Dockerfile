@@ -40,6 +40,6 @@ ADD assets/bootstrap.tar.gz $ASSETS_DIR
 ADD assets/*.conf $ASSETS_DIR/
 ADD assets/static $ASSETS_DIR/static
 ADD assets/logrotate $ASSETS_DIR/logrotate
-ADD assets/workers.properties $ASSETS_DIR/logrotate
+ADD assets/workers.properties $ASSETS_DIR
 ADD entrypoint.sh $ASSETS_DIR
 RUN chmod +x $ASSETS_DIR/entrypoint.sh

@@ -2,7 +2,7 @@ version: '2'
 services:
   subversion:
     build: .
-    image: teamcode/subversion:0.0.1
+    image: teamcode/subversion:0.0.2
     container_name: subversion
     hostname: subversion
     volumes:
