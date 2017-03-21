@@ -62,7 +62,7 @@ docker run -ti --entrypoint=/bin/bash [이미지 아이디]
 
 
 
-## 컨테이서 설정하기
+## 설정하기
 ### Subversion 에 사용자 추가하기
 teamcode/subverion 컨테이너는 Digest 인증을 사용합니다. 아래와 같이 설정합니다.
 
@@ -74,5 +74,13 @@ htdigest -c users.conf "Subversion Repository" lala
 ```
 htdigest users.conf "Subversion Repository" ryan
 ```
+
+### Apache Tomcat 연동하기
+이 Docker Image 는 mod_jk 모듈이 포함되어 있습니다. 그래서 Apache Tomcat과 연동을 바로 하실 수 있습니다.
+만약 Apache Tomcat 을 Docker Container 로 구성, 연동하시려면 ``workers.properties`` 파일의 호스트를
+Container 에 설정한 호스트 이름으로 설정하세요.
+
+기본 AJP 포트는 ``8009`` 입니다.
+
 ## License
 The Dockerized Apache Subversion is released under version 2.0 of the Apache License.

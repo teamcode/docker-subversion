@@ -34,7 +34,7 @@ if [ ! -f "$HTTPD_CONF_DIR/authz.conf" ]; then
   cp $ASSETS_DIR/authz.conf $HTTPD_CONF_DIR
 fi
 
-if [ ! -f "$HTTPD_CONF_DIR/mod_jk.conf" ]; then
+if [ ! -f "$HTTPD_CONF_DIR/conf.d/mod_jk.conf" ]; then
   echo "Copying mod_jk.conf ..."
   cp $ASSETS_DIR/mod_jk.conf $HTTPD_CONF_DIR/conf.d
 fi
