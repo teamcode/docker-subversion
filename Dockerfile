@@ -20,6 +20,11 @@ RUN yum -y install logrotate && \
 RUN yum -y install httpd httpd-devel && \
     yum -y install subversion mod_dav_svn && \
     yum clean all
+RUN yum -y install epel-release && \
+    yum -y install python && \
+    yum -y install python-pip && \
+    yum clean all
+RUN pip install requests
 
 # Install mod_jk
 ADD assets/tomcat-connectors-1.2.42-src.tar.gz .

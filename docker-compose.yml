@@ -2,9 +2,10 @@ version: '2'
 services:
   subversion:
     build: .
-    image: teamcode/subversion:0.0.2
+    image: teamcode/subversion:0.0.5
     container_name: subversion
     hostname: subversion
+    restart: always
     volumes:
       - /Users/chiang/tchome/config/httpd:/etc/subversion/httpd
       - /Users/chiang/tchome/data:/var/opt/subversion
